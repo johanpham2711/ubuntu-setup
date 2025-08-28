@@ -29,13 +29,13 @@ mkdir -p "${APP_DIR}" "${ICON_DIR}" "${DESKTOP_DIR}" "${BIN_DIR}"
 
 # Download the latest Cursor AppImage
 log "Downloading the latest Cursor AppImage..."
-curl -L "${DOWNLOAD_URL}" -o "${APP_IMAGE_PATH}" || error "Failed to download Cursor AppImage"
+# curl -L "${DOWNLOAD_URL}" -o "${APP_IMAGE_PATH}" || error "Failed to download Cursor AppImage"
 chmod +x "${APP_IMAGE_PATH}"
 log "Downloaded and made executable: ${APP_IMAGE_PATH}"
 
 # Download the Cursor icon if it doesn't exist
 if [ ! -f "${ICON_PATH}" ]; then
-    curl -sSo "${ICON_PATH}" "${ICON_DOWNLOAD_URL}" || error "Failed to download icon"
+    # curl -sSo "${ICON_PATH}" "${ICON_DOWNLOAD_URL}" || error "Failed to download icon"
     log "Downloaded logo to: ${ICON_PATH}"
 fi
 
